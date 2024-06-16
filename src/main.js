@@ -2,18 +2,16 @@ import "./style.scss";
 import "remixicon/fonts/remixicon.css";
 
 import { app } from "./framework/app";
-import { Counter } from "./pages/Counter";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
-import { Users } from "./pages/Users/Users";
-import { User } from "./pages/Users/User";
+import { Produits } from "./pages/Produits/Produits";
+import { Produit } from "./pages/Produits/Produit";
 
 const routes = {
-  "/": Home,
-  "/compteur": Counter,
-  "/contact": Contact,
-  "/utilisateur": User,
-  "/utilisateurs": Users,
+	"/": Home,
+	"/contact": Contact,
+	"/produit": Produit,
+	"/produits": Produits,
 };
 
 app("#app", routes);
