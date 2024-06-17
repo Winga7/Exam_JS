@@ -1,128 +1,170 @@
 [
 	{
 		"id": 1,
-		"name": "Marie Dubois",
-		"photo": "marie.dubois@example.com",
-		"catégorie": "admin"
+		"name": "Chaperons Hollandais",
+		"photo": "./img/produits/chaperonshollandais.jpg",
+		"description": "Chaperons typiques de Hollande, en cuir de vaches, fabriqués artisanalement. Disponibles en plusieurs tailles et couleurs.",
+		"catégorie": "Chaperons",
+		"prix": "106€"
 	},
 	{
 		"id": 2,
-		"name": "Jean Martin",
-		"photo": "jean.martin@example.com",
-		"catégorie": "utilisateur"
+		"name": "Chaperons de collection",
+		"photo": "./img/produits/chateau-musee-de-la-chasse-et-de-la-nature-gien_3941692.jpg",
+		"description": "Chaperons avec plumes authentiques, fabriqués artisanalement. Disponibles en plusieurs tailles et couleurs.",
+		"catégorie": "Chaperons",
+		"prix": "174€"
 	},
 	{
 		"id": 3,
 		"name": "Sophie Lambert",
-		"photo": "sophie.lambert@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 4,
 		"name": "Khalid Ben Ali",
-		"photo": "khalid.benali@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 5,
 		"name": "Laura Dubois",
-		"photo": "laura.dubois@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 6,
 		"name": "Luc Lefevre",
-		"photo": "luc.lefevre@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 7,
 		"name": "Julie Verhoeven",
-		"photo": "julie.verhoeven@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 8,
 		"name": "Pierre Janssens",
-		"photo": "pierre.janssens@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 9,
 		"name": "Fatoumata Koulibaly",
-		"photo": "fatoumata.koulibaly@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 10,
 		"name": "Nicolas Leroy",
-		"photo": "nicolas.leroy@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 11,
 		"name": "Camille Mercier",
-		"photo": "camille.mercier@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 12,
 		"name": "Hugo Maes",
-		"photo": "hugo.maes@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 13,
 		"name": "Elise Simon",
-		"photo": "elise.simon@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 14,
 		"name": "Antoine Thomas",
-		"photo": "antoine.thomas@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 15,
 		"name": "Amina Fabre",
-		"photo": "amina.fabre@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 16,
 		"name": "Lucas Dupuis",
-		"photo": "lucas.dupuis@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 17,
 		"name": "Cécile Dufour",
-		"photo": "cecile.dufour@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 18,
 		"name": "David Laurent",
-		"photo": "david.laurent@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 19,
 		"name": "Alice Dubois",
-		"photo": "alice.dubois@example.com",
-		"catégorie": "admin"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 20,
 		"name": "Julien Petit",
-		"photo": "julien.petit@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	},
 	{
 		"id": 21,
 		"name": "Aïsha Traoré",
-		"photo": "aisha.traore@example.com",
-		"catégorie": "utilisateur"
+		"photo": "",
+		"description": "",
+		"catégorie": "",
+		"prix": ""
 	}
 ]

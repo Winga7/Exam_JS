@@ -12,7 +12,7 @@ export const Produit = (element) => {
 	const url = new URL(window.location.href);
 	const produitId = parseInt(url.searchParams.get("id"));
 	// on récupère le produit correspondant à l'identifiant
-	const produit = produits.find((produit) => produit.id === produitId);
+	const produit = Produits.find((produit) => produit.id === produitId);
 
 	// si le produit n'existe pas, on affiche un message d'erreur
 	if (!produit) {

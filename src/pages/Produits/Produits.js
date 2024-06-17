@@ -39,7 +39,7 @@ export const Produits = (element) => {
 		if (mode === "grid") {
 			CardsList(produitsList, produits, ProduitCard, ["name", "photo"]);
 		} else if (mode === "table") {
-			DataTable(produitsList, produits, ProduitRow, ["name", "photo"], ["Nom", "Photo", "Categorie", "Actions"]);
+			DataTable(produitsList, produits, ProduitRow, ["name", "photo"], ["Nom", "Description", "Categorie", "Actions"]);
 		}
 	};
 
