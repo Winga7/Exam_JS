@@ -20,8 +20,10 @@ export const ProduitCard = (produit) => {
       <a class="card produit-link" href="/produit?id=${produit.id}">
         <div class="card-body">
           <h5 class="card-title">${produit.name}</h5>
+          <figure>
           <img src="${produit.photo}" class="card-img-top" alt="${produit.name}">
-          <p class="card-im">${produit.photo}</p>
+          </figure>
+          <p class="card-im">${produit.prix}</p>
           ${CategorieBadge(produit.catégorie)}
         </div>
       </a>

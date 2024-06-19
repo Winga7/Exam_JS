@@ -7,7 +7,12 @@
 export const CategorieBadge = (categorie) => {
 	const categories = {
 		admin: "text-bg-danger",
-		produit: "text-bg-primary",
+		Chaperons: "text-bg-primary",
+		Gants: "text-bg-success",
+		Blocs: "text-bg-warning",
+		Leurre: "text-bg-dark",
+		Telemetrie: "text-bg-light",
+		Divers: "text-bg-info",
 	};
 
 	const categorieBadge = categories[categorie] || "text-bg-secondary";

@@ -25,7 +25,10 @@ export const Produit = (element) => {
 
 	element.innerHTML = `
     <h1>${produit.name}</h1>
-    <p>${produit.photo}</p>
+		<figure>
+			<img src="${produit.photo}" class="card-img-top" alt="${produit.name}">
+		</figure>
+    <p>${produit.prix}</p>
     ${CategorieBadge(produit.categorie)}
     `;
 };
