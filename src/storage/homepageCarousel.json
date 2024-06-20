@@ -1,17 +1,17 @@
 [
 	{
-		"src": "/img/backgrounds/1.webp",
-		"title": "First slide label",
-		"description": "Some representative placeholder content for the first slide."
+		"src": "/img/backgrounds/Falconaccueil.jpeg",
+		"title": "Bienvenue sur notre site",
+		"description": "Nous vous proposons tous le matériel necessaire pour la chasse au faucon."
 	},
 	{
-		"src": "/img/backgrounds/2.webp",
-		"title": "Second slide label",
-		"description": "Some representative placeholder content for the second slide."
+		"src": "/img/produits/fauconpelerin.jpg",
+		"title": "Faucon pèlerin",
+		"description": "Faucon pelerin, femelle, née en 2018. Dressée pour la chasse."
 	},
 	{
-		"src": "/img/backgrounds/3.webp",
-		"title": "Third slide label",
-		"description": "Some representative placeholder content for the third slide."
+		"src": "/img/backgrounds/Winga.png",
+		"title": "Faucon pélerin",
+		"description": "Mascote de notre site, le faucon pélerin est un oiseau de proie très rapide et très agile. Il est utilisé pour la chasse au vol."
 	}
 ]
