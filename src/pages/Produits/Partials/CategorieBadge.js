@@ -12,6 +12,7 @@ export const CategorieBadge = (categorie) => {
 		Blocs: "text-bg-warning",
 		Leurre: "text-bg-dark",
 		Telemetrie: "text-bg-light",
+		Rapaces: "text-bg-secondary",
 		Divers: "text-bg-info",
 	};
 

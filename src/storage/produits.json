@@ -99,72 +99,96 @@
 		"id": 13,
 		"name": "Jets et manchettes (easy fit) en cuir de kangourou",
 		"photo": "./img/produits/jeteasy.png",
-		"description": "Paire de jets et manchettes easy fit en cuir de kangourou. Cuir de kangourou, connu pour sa robustesse exceptionnelle et son côté ''indestructible'' ",
+		"description": "Paire de jets et manchettes easy fit en cuir de kangourou. Cuir de kangourou, connu pour sa robustesse exceptionnelle et son côté ''indestructible''.",
 		"catégorie": "Divers",
 		"prix": "24,50€"
 	},
 	{
 		"id": 14,
-		"name": "",
-		"photo": "",
-		"description": "https://faunatshop.com/index.php?id_product=141&controller=product",
-		"catégorie": "",
-		"prix": ""
+		"name": "Fauconnière en textile cordura",
+		"photo": "./img/produits/fauconniere.png",
+		"description": "Fauconnière en textile cordura, double compartiement (+petite poches intérieur détachable).",
+		"catégorie": "Divers",
+		"prix": "28,40€"
 	},
 	{
 		"id": 15,
-		"name": "",
-		"photo": "",
-		"description": "",
-		"catégorie": "",
-		"prix": ""
+		"name": "Poche a nourriture",
+		"photo": "./img/produits/pocheanourriture.png",
+		"description": "Petite fauconnière <<pochette>> 100% imperméable, avec mousqueton et passage ceinture.",
+		"catégorie": "Divers",
+		"prix": "16,45€"
 	},
 	{
 		"id": 16,
-		"name": "",
-		"photo": "",
-		"description": "",
-		"catégorie": "",
-		"prix": ""
+		"name": "Kit débutant",
+		"photo": "./img/produits/kitdebutant.jpg",
+		"description": "Ce kit comprend la matériel de base pour débuter le travail avec votre rapace",
+		"catégorie": "Divers",
+		"prix": "146,99€"
 	},
 	{
 		"id": 17,
-		"name": "",
-		"photo": "",
-		"description": "",
-		"catégorie": "",
-		"prix": ""
+		"name": "Système GPS Turbo de marque Marshall",
+		"photo": "./img/produits/basic-gps-system.png",
+		"description": "Kit de télémetrie basic pour suivre votre rapace en temps réel.",
+		"catégorie": "Telemetrie",
+		"prix": "1595€"
 	},
 	{
 		"id": 18,
-		"name": "",
-		"photo": "",
+		"name": "Recepteur R1 Rt 433Mhz de marque Tinyloc",
+		"photo": "./img/produits/recepteurtyniloc.jpg",
 		"description": "",
-		"catégorie": "",
-		"prix": ""
+		"catégorie": "Telemetrie",
+		"prix": "449€"
 	},
 	{
 		"id": 19,
-		"name": "",
-		"photo": "",
-		"description": "",
-		"catégorie": "",
-		"prix": ""
+		"name": "Recepteur RS Track de marque Microsensory",
+		"photo": "./img/produits/RS_Track.png",
+		"description": "Recepteur Gps, autonomie de 3mois et rechargeable solaire. 4G technology. Position en temps réel.",
+		"catégorie": "Telemetrie",
+		"prix": "700€"
 	},
 	{
 		"id": 20,
-		"name": "",
-		"photo": "",
-		"description": "",
-		"catégorie": "",
-		"prix": ""
+		"name": "Recepteur MicroFind de marque Microsensory",
+		"photo": "./img/produits/1.png",
+		"description": "Recepteur de télémetrie pour suivre votre rapace en temps réel. Permet de voir la vitesse, altitude, direction, etc.",
+		"catégorie": "Telemetrie",
+		"prix": "750€"
 	},
 	{
 		"id": 21,
-		"name": "",
-		"photo": "",
-		"description": "",
-		"catégorie": "",
-		"prix": ""
+		"name": "Pack - RS6 + L7 + Recepteur RS Track de marque Microsensory",
+		"photo": "./img/produits/6-5.png",
+		"description": "Pack complet avec 2 emetteurs et 1 recepteur pour suivre votre rapace en temps réel. Permet de voir la vitesse, altitude, direction, etc.",
+		"catégorie": "Telemetrie",
+		"prix": "2350€"
+	},
+	{
+		"id": 22,
+		"name": "Faucon Pelerin",
+		"photo": "./img/produits/fauconpelerin.jpg",
+		"description": "Faucon pelerin, femelle, née en 2018. Dressée pour la chasse.",
+		"catégorie": "Rapaces",
+		"prix": "1500€"
+	},
+	{
+		"id": 23,
+		"name": "Autours de Palombe",
+		"photo": "./img/produits/autoursdepalombe.jpg",
+		"description": "Autour de Palombe, mâle, né en 2017. Dressé pour la chasse.",
+		"catégorie": "Rapaces",
+		"prix": "1200€"
+	},
+	{
+		"id": 24,
+		"name": "Faucon Gerfaut",
+		"photo": "./img/produits/faucongerfault.jpg",
+		"description": "Faucon Gerfaut, femelle, née en 2016. Dressée pour la chasse.",
+		"catégorie": "Rapaces",
+		"prix": "5450€"
 	}
 ]
