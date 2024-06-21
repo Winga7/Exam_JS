@@ -28,7 +28,32 @@ export const Produit = (element) => {
 		<figure>
 			<img src="${produit.photo}" class="card-img-top" alt="${produit.name}">
 		</figure>
-    <p>${produit.prix}</p>
-    ${CategorieBadge(produit.categorie)}
+		<p>${produit.description}</p>
+    <p id="prix">${produit.prix}</p>
+		${CategorieBadge(produit.catégorie)}<br><br>
+			<input id="quantite" type="number" name="quantity" value="1" min="1" max="10">
+			<button id="envoyer" class="btn btn-primary">Ajouter au panier</button>
     `;
+	let baliseQuantite = document.getElementById("quantite");
+	let baliseEnvoyer = document.getElementById("envoyer");
+	baliseEnvoyer.addEventListener("click", () => {
+		let quantite = parseInt(baliseQuantite.value);
+		let panier = JSON.parse(localStorage.getItem("panier")) || [];
+		let produitPanier = panier.find((produit) => produit.id === produitId);
+		if (produitPanier) {
+			produitPanier.quantite += quantite;
+		} else {
+			panier.push({ ...produit, quantite });
+		}
+		localStorage.setItem("panier", JSON.stringify(panier));
+	});
 };
+
+function recupPanier() {
+	let panier = JSON.parse(localStorage.getItem("panier")) || [];
+	let total = 0;
+	panier.forEach((produit) => {
+		total += produit.prix * produit.quantite;
+	});
+	return { panier, total };
+}
