@@ -23,7 +23,7 @@ export const ProduitCard = (produit) => {
           <figure>
           <img src="${produit.photo}" class="card-img-top" alt="${produit.name}">
           </figure>
-          <p class="card-im">${produit.prix}</p>
+          <p class="card-im">${produit.prix} €</p>
           ${CategorieBadge(produit.catégorie)}
         </div>
       </a>
