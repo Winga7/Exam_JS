@@ -13,6 +13,7 @@ export const Layout = () => {
       </main>
       <footer class="text-center mt-auto">
         <p>&copy; ${year} - Tous droits réservés by Winga</p>
+        <p>Site à but d'exercices étudiant</p>
       </footer>
     </div>
     `;
