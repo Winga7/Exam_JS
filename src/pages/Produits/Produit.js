@@ -32,16 +32,16 @@ export const Produit = (element) => {
 	// si le produit n'existe pas, on affiche un message d'erreur
 	if (produit && produit.name && produit.photo && produit.description && produit.prix && produit.catégorie) {
 		element.innerHTML = `
-      <h1>${escapeHTML(produit.name)}</h1>
-      <figure>
-      <img src="${escapeHTML(produit.photo)}" class="card-img-top" alt="${escapeHTML(produit.name)}">
+      <h1 class="presentation">${escapeHTML(produit.name)}</h1>
+      <figure class="presentation">
+      <img src="${escapeHTML(produit.photo)}" id="affiche" class="card-img-top" alt="${escapeHTML(produit.name)}">
       </figure>
-      <p>${escapeHTML(produit.description)}</p>
-      <p id="prix">${escapeHTML(produit.prix.toString())} €</p>
-      ${CategorieBadge(escapeHTML(produit.catégorie))}<br><br>
-      <input id="quantite" type="number" name="quantity" value="1" min="1" max="10">
-      <button id="envoyer" class="btn btn-primary">Ajouter au panier</button>
-			<div id="messageConfirmation" style="color: red; display: none;"></div>
+      <p class="presentation">${escapeHTML(produit.description)}</p>
+      <p id="prix" class="presentation">${escapeHTML(produit.prix.toString())} €</p>
+      <p class="presentation">${CategorieBadge(escapeHTML(produit.catégorie))}</p>
+      <p class="presentation"><input id="quantite"  type="number" name="quantity" value="1" min="1" max="10">
+      <button id="envoyer" class="btn btn-success presentation">Ajouter au panier</button></p>
+			<div id="messageConfirmation" class="presentation" style="color: red; display: none;"></div>
     `;
 
 		let baliseQuantite = document.getElementById("quantite");
