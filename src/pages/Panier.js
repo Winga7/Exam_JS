@@ -51,14 +51,14 @@ const EnleverProduit = (produit) => {
 export const Panier = (element) => {
 	let { panier, total } = recupPanier();
 	element.innerHTML = `
-	<h1>Panier</h1>
+	<h1 class="Panier">Panier</h1>
 	<table class="table">
 		<thead>
 			<tr>
-				<th scope="col">Nom</th>
-				<th scope="col">Prix unitaire</th>
-				<th scope="col">Quantité</th>
-				<th scope="col">Prix total</th>
+				<th scope="col" class="Panier">Nom</th>
+				<th scope="col" class="Panier">Prix unitaire</th>
+				<th scope="col" class="Panier">Quantité</th>
+				<th scope="col" class="Panier">Prix total</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -66,11 +66,11 @@ export const Panier = (element) => {
 				.map(
 					(produit) => `
 				<tr>
-					<td>${produit.name}</td>
-					<td>${produit.prix} €</td>
-					<td>${produit.quantite}</td>
-					<td>${produit.prix * produit.quantite} €</td>
-          <td>
+					<td class="Panier">${produit.name}</td>
+					<td class="Panier">${produit.prix} €</td>
+					<td class="Panier">${produit.quantite}</td>
+					<td class="Panier">${produit.prix * produit.quantite} €</td>
+          <td class="Panier">
             <button class="btn btn-primary ajouterProduit">+</button>
             <button class="btn btn-danger enleverProduit">-</button>
 				</tr>
@@ -79,7 +79,7 @@ export const Panier = (element) => {
 				.join("")}
 		</tbody>
 	</table>
-	<p id="Total" >Total : ${total} €</p>
+	<p id="Total" >Total : <span>${total}</span> €</p>
 	<button id='supprimerPanier' class='btn btn-danger'>
 	Supprimer TOUT le Panier
 	</button>

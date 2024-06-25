@@ -19,11 +19,11 @@ export const ProduitCard = (produit) => {
     <div class="col p-2">
       <a class="card produit-link" href="/produit?id=${produit.id}">
         <div class="card-body">
-          <h5 class="card-title">${produit.name}</h5>
+          <h5 class="card-title carte">${produit.name}</h5>
           <figure>
           <img src="${produit.photo}" class="card-img-top" alt="${produit.name}">
           </figure>
-          <p class="card-im">${produit.prix} €</p>
+          <p class="card-im carte prix">${produit.prix} €</p>
           ${CategorieBadge(produit.catégorie)}
         </div>
       </a>
