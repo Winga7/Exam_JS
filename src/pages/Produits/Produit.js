@@ -60,6 +60,7 @@ export const Produit = (element) => {
 						}
 						localStorage.setItem("panier", JSON.stringify(panier));
 
+						// Afficher un message de confirmation
 						let messageConfirmation = document.getElementById("messageConfirmation");
 						messageConfirmation.textContent = "Le produit a bien été ajouté à votre panier.";
 						messageConfirmation.style.display = "block";
@@ -68,6 +69,8 @@ export const Produit = (element) => {
 						setTimeout(() => {
 							messageConfirmation.style.display = "none";
 						}, 3000);
+
+						return Produit(element);
 					} catch (e) {
 						console.error("Erreur lors de la manipulation du panier", e);
 					}

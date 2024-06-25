@@ -7,7 +7,7 @@
 
 // ProduitPanier();
 
-function recupPanier() {
+export function recupPanier() {
 	try {
 		let panier = JSON.parse(localStorage.getItem("panier")) || [];
 		let total = 0;
@@ -19,6 +19,20 @@ function recupPanier() {
 		console.error("Erreur lors de la récupération du panier", e);
 		return { panier: [], total: 0 };
 	}
+}
+
+function quantitePanier(produit) {
+	let panier = recupPanier();
+	let total = 0;
+
+	for (let i = 0; i < panier.length; i++) {
+		total += parseFloat(panier[i].quantité);
+	}
+	if (total > 999) {
+		total = 999;
+		total += "+";
+	}
+	return total;
 }
 
 const SupprimerPanier = () => {

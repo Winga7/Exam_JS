@@ -1,5 +1,16 @@
 @import "bootstrap/scss/bootstrap";
 
+// Général
+
+body {
+	background-color: rgb(31, 31, 31);
+	color: white;
+}
+
+nav {
+	background-color: rgb(31, 31, 31);
+}
+
 // Page d'accueil
 .Accueil {
 	text-align: center;
@@ -10,9 +21,25 @@
 	width: 65%;
 }
 
-.presentation {
-	text-align: center;
+// Carrousel
+
+// .carousel-item {
+// 	margin-left: 20vw;
+// }
+.carousel-inner img {
+	height: 40em !important;
+	// width: 50vw !important;
+	// height: 75vh !important;
+	// object-fit: cover;
 }
+
+// .carousel-caption {
+// 	right: 50%;
+// }
+
+// .presentation {
+// 	text-align: center;
+// }
 
 // ProduitCard
 
@@ -21,6 +48,10 @@
 }
 .carte {
 	text-align: center;
+}
+
+.imgCard {
+	height: 15em !important;
 }
 
 // ProduitRow
