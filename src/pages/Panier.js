@@ -49,7 +49,7 @@ const AjouterProduit = (produit) => {
 		panier.push({ ...produit, quantite: 1 });
 	}
 	localStorage.setItem("panier", JSON.stringify(panier));
-	mettreAJourQuantitePanier();
+	document.dispatchEvent(new CustomEvent("panierChange"));
 };
 
 const EnleverProduit = (produit) => {
@@ -62,7 +62,7 @@ const EnleverProduit = (produit) => {
 		}
 	}
 	localStorage.setItem("panier", JSON.stringify(panier));
-	mettreAJourQuantitePanier();
+	document.dispatchEvent(new CustomEvent("panierChange"));
 };
 
 export const Panier = (element) => {

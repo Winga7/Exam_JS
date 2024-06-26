@@ -41,7 +41,7 @@ export const Produit = (element) => {
       <p class="presentation">${CategorieBadge(escapeHTML(produit.catégorie))}</p>
       <p class="presentation"><input id="quantite"  type="number" name="quantity" value="1" min="1" max="10">
       <button id="envoyer" class="btn btn-success presentation">Ajouter au panier</button></p>
-			<div id="messageConfirmation" class="presentation" style="color: red; display: none;"></div>
+			<div id="messageConfirmation" style="color: lime; "></div>
     `;
 
 		let baliseQuantite = document.getElementById("quantite");
@@ -62,15 +62,17 @@ export const Produit = (element) => {
 
 						// Afficher un message de confirmation
 						let messageConfirmation = document.getElementById("messageConfirmation");
-						messageConfirmation.textContent = "Le produit a bien été ajouté à votre panier.";
-						messageConfirmation.style.display = "block";
+						messageConfirmation.innerHTML = "Le produit a bien été ajouté à votre panier.";
+						messageConfirmation.style.display = "block ";
+
+						document.dispatchEvent(new CustomEvent("panierChange"));
 
 						// Masquer le message après 3 secondes
 						setTimeout(() => {
 							messageConfirmation.style.display = "none";
 						}, 3000);
 
-						return Produit(element);
+						// return Produit(element);
 					} catch (e) {
 						console.error("Erreur lors de la manipulation du panier", e);
 					}

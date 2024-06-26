@@ -13,11 +13,10 @@ import { quantiteTotalePanier, recupPanier } from "../pages/Panier";
  */
 export const Nav = (element) => {
 	const appName = "Tout pour les Fauconniers";
-
-	const quantite = quantiteTotalePanier(); // Utilisez la fonction importée pour obtenir la quantité totale
+	const quantite = quantiteTotalePanier();
 	const elementQuantite = document.getElementById("cart-count");
 	if (elementQuantite) {
-		elementQuantite.textContent = quantite; // Mettez à jour le contenu de l'élément
+		elementQuantite.textContent = quantite; // Met à jour le contenu de l'élément
 	}
 
 	/**
@@ -31,7 +30,7 @@ export const Nav = (element) => {
 	];
 
 	const { panier } = recupPanier();
-	const totalArticles = panier.reduce((acc, produit) => acc + produit.quantite, 0);
+	let totalArticles = panier.reduce((acc, produit) => acc + produit.quantite, 0);
 
 	element.innerHTML = `
     <nav class="navbar navbar-expand-lg bg-dark-subtle">
@@ -130,5 +129,14 @@ export const Nav = (element) => {
 		markAsActive();
 		changePageTitle();
 		element.dispatchEvent(new CustomEvent(ROUTE_CHANGED_EVENT));
+	});
+
+	document.addEventListener("panierChange", () => {
+		const { panier } = recupPanier();
+		let totalArticles = panier.reduce((acc, produit) => acc + produit.quantite, 0);
+		let nombrePanier = document.getElementById("cart-count");
+		console.log(nombrePanier);
+		nombrePanier.innerHTML = totalArticles;
+		console.log(totalArticles);
 	});
 };
