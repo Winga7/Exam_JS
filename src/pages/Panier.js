@@ -21,19 +21,20 @@ export function recupPanier() {
 	}
 }
 
-function quantitePanier(produit) {
-	let panier = recupPanier();
+export function quantitePanier() {
+	let panier = recupPanier().panier; // Correction pour accéder correctement à l'objet panier
 	let total = 0;
 
 	for (let i = 0; i < panier.length; i++) {
-		total += parseFloat(panier[i].quantité);
+		total += parseFloat(panier[i].quantite); // Correction de 'quantité' à 'quantite'
 	}
 	if (total > 999) {
-		total = 999;
-		total += "+";
+		return "999+";
 	}
-	return total;
+	return total.toString();
 }
+
+export { quantitePanier as quantiteTotalePanier };
 
 const SupprimerPanier = () => {
 	localStorage.removeItem("panier");
@@ -48,6 +49,7 @@ const AjouterProduit = (produit) => {
 		panier.push({ ...produit, quantite: 1 });
 	}
 	localStorage.setItem("panier", JSON.stringify(panier));
+	mettreAJourQuantitePanier();
 };
 
 const EnleverProduit = (produit) => {
@@ -60,6 +62,7 @@ const EnleverProduit = (produit) => {
 		}
 	}
 	localStorage.setItem("panier", JSON.stringify(panier));
+	mettreAJourQuantitePanier();
 };
 
 export const Panier = (element) => {
@@ -102,12 +105,18 @@ export const Panier = (element) => {
 		SupprimerPanier();
 		Panier(element); // Permet de mettre automatiquement à jour la page
 	});
-	element.querySelector(".ajouterProduit").addEventListener("click", () => {
-		AjouterProduit(produit);
-		ProduitPanier(element, produit);
+	element.querySelectorAll(".ajouterProduit").forEach((bouton, index) => {
+		bouton.addEventListener("click", () => {
+			const produit = panier[index];
+			AjouterProduit(produit);
+			Panier(element); // Met à jour l'affichage du panier
+		});
 	});
-	element.querySelector(".enleverProduit").addEventListener("click", () => {
-		EnleverProduit(produit);
-		Panier();
+	element.querySelectorAll(".enleverProduit").forEach((bouton, index) => {
+		bouton.addEventListener("click", () => {
+			const produit = panier[index];
+			EnleverProduit(produit);
+			Panier(element); // Met à jour l'affichage du panier
+		});
 	});
 };

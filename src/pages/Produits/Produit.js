@@ -65,7 +65,7 @@ export const Produit = (element) => {
 						messageConfirmation.textContent = "Le produit a bien été ajouté à votre panier.";
 						messageConfirmation.style.display = "block";
 
-						// Optionnel : masquer le message après quelques secondes
+						// Masquer le message après 3 secondes
 						setTimeout(() => {
 							messageConfirmation.style.display = "none";
 						}, 3000);
